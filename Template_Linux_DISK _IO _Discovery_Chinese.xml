@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2017-04-25T04:48:33Z</date>
+    <date>2017-04-25T06:10:08Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -30,7 +30,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>iostat[discovery]</key>
-                    <delay>30</delay>
+                    <delay>300</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
@@ -154,7 +154,7 @@
                             <application_prototypes/>
                         </item_prototype>
                         <item_prototype>
-                            <name>I/O Device /dev/$1 磁盘每秒完成IO读取的次数</name>
+                            <name>I/O Device /dev/$1 磁盘每秒成功读取的扇区数</name>
                             <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
@@ -378,7 +378,7 @@
                             <application_prototypes/>
                         </item_prototype>
                         <item_prototype>
-                            <name>I/O Device /dev/$1 磁盘每秒完成IO写入的次数</name>
+                            <name>I/O Device /dev/$1 磁盘每秒成功写入的扇区数</name>
                             <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
@@ -572,7 +572,7 @@
                     </trigger_prototypes>
                     <graph_prototypes>
                         <graph_prototype>
-                            <name>Disk I/O /dev/{#DEVICENAME} 服务时间</name>
+                            <name>Disk I/O /dev/{#DEVICENAME} IO请求时间状态</name>
                             <width>1800</width>
                             <height>400</height>
                             <yaxismin>0.0000</yaxismin>
@@ -640,7 +640,7 @@
                             </graph_items>
                         </graph_prototype>
                         <graph_prototype>
-                            <name>Disk I/O /dev/{#DEVICENAME} 磁盘完成读取/写入状态</name>
+                            <name>Disk I/O /dev/{#DEVICENAME} 磁盘成功读取/写入的扇区数</name>
                             <width>1800</width>
                             <height>400</height>
                             <yaxismin>0.0000</yaxismin>
@@ -696,7 +696,7 @@
                             </graph_items>
                         </graph_prototype>
                         <graph_prototype>
-                            <name>Disk I/O /dev/{#DEVICENAME} 磁盘读取/写入数据状态</name>
+                            <name>Disk I/O /dev/{#DEVICENAME} 磁盘读取/写入数据大小</name>
                             <width>1800</width>
                             <height>400</height>
                             <yaxismin>0.0000</yaxismin>
